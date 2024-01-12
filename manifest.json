@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "jumpjack",
+    "description": "Instantly jumps over your youtube ads! | v1.1: Faster jumps + time-saved counter!",
+    "version": "1.1.1",
+    "author": "quill quarius",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "jumpjack"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "icons": { "128": "jumpjack.png" },
+    "permissions": ["storage"]
+}
